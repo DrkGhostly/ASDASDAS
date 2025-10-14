@@ -19,7 +19,6 @@ fi
 
 # Variables
 INSTALL_DIR="/opt/dailymotion-server"
-SERVICE_USER="dailymotion"
 
 echo "📦 Actualizando sistema..."
 apt update && apt upgrade -y
@@ -55,11 +54,9 @@ from datetime import datetime, timedelta
 
 app = Flask(__name__)
 
-# Cache para almacenar URLs temporalmente
 cache = {}
 
 def get_m3u8_with_ytdlp(video_url):
-    """Extrae el enlace M3U8 usando yt-dlp"""
     try:
         print(f"🔍 Extrayendo M3U8 de: {video_url}")
         result = subprocess.check_output(
@@ -80,7 +77,6 @@ def get_m3u8_with_ytdlp(video_url):
         return None
 
 def get_cached_url(video_id):
-    """Obtiene URL del cache o la actualiza si es necesario"""
     video_url = f"https://www.dailymotion.com/video/{video_id}"
     now = datetime.now()
     if video_id in cache:
@@ -97,27 +93,25 @@ def get_cached_url(video_id):
 
 @app.route('/')
 def index():
-    """Página de inicio"""
     html = """<!DOCTYPE html><html><head><title>Dailymotion M3U8 Server</title>
-    <style>body{font-family:Arial,sans-serif;max-width:800px;margin:50px auto;padding:20px;background:#f5f5f5}
-    .container{background:white;padding:30px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
-    h1{color:#333}.channel{background:#f0f0f0;padding:15px;margin:10px 0;border-radius:5px}
-    code{background:#e8e8e8;padding:2px 6px;border-radius:3px}</style></head>
-    <body><div class="container"><h1>🎥 Dailymotion M3U8 Server</h1>
-    <h2>📺 Canales Disponibles:</h2>
-    <div class="channel"><h3>CDN en Vivo (x9lincs)</h3>
-    <p>Stream: <code>/stream/x9lincs</code></p>
-    <p>Playlist: <code>/playlist/x9lincs.m3u8</code></p></div>
-    <div class="channel"><h3>CDN Deportes (x9lntl6)</h3>
-    <p>Stream: <code>/stream/x9lntl6</code></p>
-    <p>Playlist: <code>/playlist/x9lntl6.m3u8</code></p></div>
-    <p><strong>Cache:</strong> 30 minutos | <strong>Auto-renovación:</strong> ✅</p>
-    </div></body></html>"""
+<style>body{font-family:Arial,sans-serif;max-width:800px;margin:50px auto;padding:20px;background:#f5f5f5}
+.container{background:white;padding:30px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}
+h1{color:#333}.channel{background:#f0f0f0;padding:15px;margin:10px 0;border-radius:5px}
+code{background:#e8e8e8;padding:2px 6px;border-radius:3px}</style></head>
+<body><div class="container"><h1>🎥 Dailymotion M3U8 Server</h1>
+<h2>📺 Canales Disponibles:</h2>
+<div class="channel"><h3>CDN en Vivo (x9lincs)</h3>
+<p>Stream: <code>/stream/x9lincs</code></p>
+<p>Playlist: <code>/playlist/x9lincs.m3u8</code></p></div>
+<div class="channel"><h3>CDN Deportes (x9lntl6)</h3>
+<p>Stream: <code>/stream/x9lntl6</code></p>
+<p>Playlist: <code>/playlist/x9lntl6.m3u8</code></p></div>
+<p><strong>Cache:</strong> 30 minutos | <strong>Auto-renovación:</strong> ✅</p>
+</div></body></html>"""
     return render_template_string(html)
 
 @app.route('/stream/<video_id>')
 def stream(video_id):
-    """Redirige al stream M3U8 actual"""
     url = get_cached_url(video_id)
     if url:
         return redirect(url)
@@ -125,7 +119,6 @@ def stream(video_id):
 
 @app.route('/get/<video_id>')
 def get_url(video_id):
-    """Devuelve solo la URL en texto plano"""
     url = get_cached_url(video_id)
     if url:
         return Response(url, mimetype='text/plain')
@@ -133,7 +126,6 @@ def get_url(video_id):
 
 @app.route('/playlist/<video_id>.m3u8')
 def playlist(video_id):
-    """Genera un playlist M3U8 con la URL directa"""
     video_id = video_id.replace('.m3u8', '')
     url = get_cached_url(video_id)
     if not url:
@@ -147,7 +139,6 @@ def playlist(video_id):
 
 @app.route('/api/url/<video_id>')
 def api_url(video_id):
-    """API JSON para obtener la URL"""
     url = get_cached_url(video_id)
     if url:
         cached_data = cache.get(video_id, {})
@@ -161,7 +152,6 @@ def api_url(video_id):
 
 @app.route('/clear-cache')
 def clear_cache_route():
-    """Limpia el cache"""
     cache.clear()
     return jsonify({'success': True, 'message': 'Cache limpiado'})
 
@@ -171,7 +161,7 @@ EOFPYTHON
 
 echo ""
 echo "🔧 Creando servicio systemd..."
-cat > /etc/systemd/system/dailymotion-stream.service << EOFSERVICE
+cat > /etc/systemd/system/dailymotion-stream.service << 'EOFSERVICE'
 [Unit]
 Description=Dailymotion M3U8 Stream Server
 After=network.target
@@ -179,9 +169,9 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=$INSTALL_DIR
-Environment="PATH=$INSTALL_DIR/venv/bin"
-ExecStart=$INSTALL_DIR/venv/bin/gunicorn --bind 0.0.0.0:5000 --workers 2 --timeout 120 server:app
+WorkingDirectory=/opt/dailymotion-server
+Environment="PATH=/opt/dailymotion-server/venv/bin"
+ExecStart=/opt/dailymotion-server/venv/bin/gunicorn --bind 0.0.0.0:5000 --workers 2 --timeout 120 server:app
 Restart=always
 RestartSec=10
 
@@ -208,11 +198,9 @@ server {
 }
 EOFNGINX
 
-# Activar sitio
 ln -sf /etc/nginx/sites-available/dailymotion-stream /etc/nginx/sites-enabled/
 rm -f /etc/nginx/sites-enabled/default
 
-# Verificar configuración de Nginx
 nginx -t
 
 echo ""
