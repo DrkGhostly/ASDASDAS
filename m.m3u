@@ -1,0 +1,41 @@
+#EXTM3U url-tvg="http://m3u4u.com/epg/69wkngk7z3uvpgp6nq8g"
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="BABY FIRST HD" tvg-logo="https://1000marcas.net/wp-content/uploads/2022/10/BabyFirstTV-Logo.png" group-title="INFANTILES",BABY FIRST HD
+http://45.232.176.29:8000/play/a007
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="BABY TV HD" tvg-logo="https://static.wikia.nocookie.net/dreamlogos/images/c/ca/Baby_TV.png/revision/latest?cb=20170414213654" group-title="INFANTILES",BABY TV HD
+http://190.0.247.38:8000/play/a00d
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="CANAL INFANTIL HD" tvg-logo="https://static.wikia.nocookie.net/doblaje/images/5/5f/Canal_Infantil.png/revision/latest?cb=20230419185326&path-prefix=es" group-title="INFANTILES",CANAL INFANTIL HD
+http://181.225.190.242:8000/play/a00j
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="CARTOON NETWORK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/47/Logo_of_Cartoon_Network_HD_%28MENA%29.png" group-title="INFANTILES",CARTOON NETWORK HD
+http://181.209.95.30:8000/play/a075/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="CARTOONITO HD" tvg-logo="https://i.pinimg.com/originals/f1/fd/b6/f1fdb68667edf995bf95a5b49e813376.png" group-title="INFANTILES",CARTOONITO HD
+http://190.61.34.164:8000/play/a019/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="CLAN HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Clan_logo.svg/1200px-Clan_logo.svg.png" group-title="INFANTILES",CLAN HD
+http://190.119.247.205:8000/play/a00a
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DIOS TV KIDS HD" tvg-logo="https://www.diosteve.org/wp-content/uploads/2022/04/235403078_2666022853698120_5407670730821234601_n-PhotoRoom.png" group-title="INFANTILES",DIOS TV KIDS HD
+http://190.122.104.210:5080/LiveApp/streams/diostv.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISCOVERY KIDS HD" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/546px-2016_Discovery_Kids_logo.svg.png" group-title="INFANTILES",DISCOVERY KIDS HD
+http://148.222.228.3:9000/play/a09x/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISNEY JUNIOR HD" tvg-logo="http://i.ibb.co/56XMCnL/640px-Disney-Junior-svg.png" group-title="INFANTILES",DISNEY JUNIOR HD
+http://181.225.190.242:8000/play/a01f
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DREAMWORKS HD" tvg-logo="https://static.wikia.nocookie.net/dreamworks/images/0/0a/DreamWorks2025.png/revision/latest?cb=20250416020625" group-title="INFANTILES",DREAMWORKS HD
+http://181.225.190.242:8000/play/a01h
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="LOGOS KIDS HD" tvg-logo="https://4.bp.blogspot.com/-R1YWDkeR4Go/XKQ3XauwssI/AAAAAAAAMeY/Fzc8kMY_R4wP-DGqcUkrIf8m-yG-Pq71wCK4BGAYYCw/s1600/Captura%2Bde%2Bpantalla%2B%25285%2529.jpg" group-title="INFANTILES",LOGOS KIDS HD
+https://streamer1.streamhost.org/salive/logoskidsH/playlist.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="MOONBUG ENG HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5c/Moonbug2ndLogo.png" group-title="INFANTILES",MOONBUG ENG HD
+https://moonbug-rokuus.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="NICK JR HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Nick_Jr._HD.png" group-title="INFANTILES",NICK JR HD
+http://195.66.210.10:80/nEwCle2023/ALsXbbDsaA/242022
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="NICKELODEON HD" tvg-logo="https://static.wikia.nocookie.net/nickelodeon/images/7/7e/2023_Nick_3D.png/revision/latest?cb=20240725134816" group-title="INFANTILES",NICKELODEON HD
+http://38.224.175.2:8000/play/a0tt/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="PBS KIDS ENG HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/PBS_Kids_logo_%282022%29.svg/330px-PBS_Kids_logo_%282022%29.svg.png" group-title="INFANTILES",PBS KIDS ENG HD
+https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="PLIM PLIM HD" tvg-logo="https://www.pikpng.com/pngl/b/555-5555794_el-payaso-plim-plim-payaso-plim-plim-logo.png" group-title="INFANTILES",PLIM PLIM HD
+http://181.225.190.242:8000/play/a02m
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="RAMDOMKIDS HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJjiZPiMiZf9WOL7BoJQ22MOCCf9oG5LnbQA&s" group-title="INFANTILES",RAMDOMKIDS HD
+http://38.56.112.128:5000/play/a0el/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="SENSICAL KIDS ENG HD" tvg-logo="https://cdn.prod.website-files.com/6164b946875e876d5eaed31e/65d912b7cd7af588f9f88af6_Sensical_Jr_Logo-Color.png" group-title="INFANTILES",SENSICAL KIDS ENG HD
+https://sensical2up-oando.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="TEENNICK HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3c/TeenNick_2023_Outlined_Logo.png" group-title="INFANTILES",TEENNICK HD
+http://38.252.238.18:8000/play/a014/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="ZOOMOO HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/ZooMoo-Kids-Logo-Oficial-01.png" group-title="INFANTILES",ZOOMOO HD
+http://190.119.160.100:8000/play/zoomoo/index.m3u8
