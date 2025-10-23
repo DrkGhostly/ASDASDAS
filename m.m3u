@@ -12,7 +12,7 @@ http://190.61.34.164:8000/play/a019/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="CLAN HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Clan_logo.svg/1200px-Clan_logo.svg.png" group-title="INFANTILES",CLAN HD
 http://190.119.247.205:8000/play/a00a
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DIOS TV KIDS HD" tvg-logo="https://www.diosteve.org/wp-content/uploads/2022/04/235403078_2666022853698120_5407670730821234601_n-PhotoRoom.png" group-title="INFANTILES",DIOS TV KIDS HD
-http://190.122.104.210:5080/LiveApp/streams/diostv.m3u8
+https://s.emisoras.tv:8081/diostevekids/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISCOVERY KIDS HD" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/546px-2016_Discovery_Kids_logo.svg.png" group-title="INFANTILES",DISCOVERY KIDS HD
 http://148.222.228.3:9000/play/a09x/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISNEY JUNIOR HD" tvg-logo="http://i.ibb.co/56XMCnL/640px-Disney-Junior-svg.png" group-title="INFANTILES",DISNEY JUNIOR HD
@@ -39,3 +39,4 @@ https://sensical2up-oando.amagi.tv/playlist.m3u8
 http://38.252.238.18:8000/play/a014/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="ZOOMOO HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/ZooMoo-Kids-Logo-Oficial-01.png" group-title="INFANTILES",ZOOMOO HD
 http://190.119.160.100:8000/play/zoomoo/index.m3u8
+
