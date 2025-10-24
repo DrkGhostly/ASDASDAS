@@ -15,8 +15,10 @@ http://190.119.247.205:8000/play/a00a
 https://s.emisoras.tv:8081/diostevekids/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISCOVERY KIDS HD" tvg-logo="https://logoeps.com/wp-content/uploads/2013/08/discovery-kids-vector-logo.png" group-title="INFANTILES",DISCOVERY KIDS HD
 http://148.222.228.3:9000/play/a09x/index.m3u8
-#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISNEY JUNIOR HD" tvg-logo="https://i.ytimg.com/vi/CJm7U7_0d6o/sddefault.jpg" group-title="INFANTILES",DISNEY JUNIOR HD
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISNEY JUNIOR 1" tvg-logo="https://i.ytimg.com/vi/CJm7U7_0d6o/sddefault.jpg" group-title="INFANTILES",DISNEY JUNIOR 1
 http://190.83.9.222:8000/play/ca030/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISNEY JUNIOR 2" tvg-logo="https://i.ytimg.com/vi/CJm7U7_0d6o/sddefault.jpg" group-title="INFANTILES",DISNEY JUNIOR 2
+http://181.225.190.242:8000/play/a01f
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DREAMWORKS HD" tvg-logo="https://static.wikia.nocookie.net/dreamworks/images/0/0a/DreamWorks2025.png/revision/latest?cb=20250416020625" group-title="INFANTILES",DREAMWORKS HD
 http://181.225.190.242:8000/play/a01h
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="LOGOS KIDS HD" tvg-logo="https://4.bp.blogspot.com/-R1YWDkeR4Go/XKQ3XauwssI/AAAAAAAAMeY/Fzc8kMY_R4wP-DGqcUkrIf8m-yG-Pq71wCK4BGAYYCw/s1600/Captura%2Bde%2Bpantalla%2B%25285%2529.jpg" group-title="INFANTILES",LOGOS KIDS HD
