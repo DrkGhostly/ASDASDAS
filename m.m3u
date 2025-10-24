@@ -16,7 +16,7 @@ https://s.emisoras.tv:8081/diostevekids/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISCOVERY KIDS HD" tvg-logo="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2016_Discovery_Kids_logo.svg/546px-2016_Discovery_Kids_logo.svg.png" group-title="INFANTILES",DISCOVERY KIDS HD
 http://148.222.228.3:9000/play/a09x/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DISNEY JUNIOR HD" tvg-logo="http://i.ibb.co/56XMCnL/640px-Disney-Junior-svg.png" group-title="INFANTILES",DISNEY JUNIOR HD
-http://181.225.190.242:8000/play/a01f
+http://190.60.42.86:8000/play/a00a/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="DREAMWORKS HD" tvg-logo="https://static.wikia.nocookie.net/dreamworks/images/0/0a/DreamWorks2025.png/revision/latest?cb=20250416020625" group-title="INFANTILES",DREAMWORKS HD
 http://181.225.190.242:8000/play/a01h
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="LOGOS KIDS HD" tvg-logo="https://4.bp.blogspot.com/-R1YWDkeR4Go/XKQ3XauwssI/AAAAAAAAMeY/Fzc8kMY_R4wP-DGqcUkrIf8m-yG-Pq71wCK4BGAYYCw/s1600/Captura%2Bde%2Bpantalla%2B%25285%2529.jpg" group-title="INFANTILES",LOGOS KIDS HD
@@ -39,4 +39,6 @@ https://sensical2up-oando.amagi.tv/playlist.m3u8
 http://38.252.238.18:8000/play/a014/index.m3u8
 #EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="ZOOMOO HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/ZooMoo-Kids-Logo-Oficial-01.png" group-title="INFANTILES",ZOOMOO HD
 http://190.119.160.100:8000/play/zoomoo/index.m3u8
+#EXTINF:-1 tvg-id="(no tvg-id)" tvg-name="TEST" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/ZooMoo-Kids-Logo-Oficial-01.png" group-title="INFANTILES",ZOOMOO HD
+https://viamotionhsi.netplus.ch/live/eds/channel5/browser-dash/channel5.mpd
 
